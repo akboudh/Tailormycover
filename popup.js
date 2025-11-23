@@ -44,6 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Execute script if not already injected (optional safety, but manifest handles it usually)
             // We'll rely on manifest content_scripts for now.
 
+            // Inject the script programmatically to avoid "Broad Host Permissions" warning
+            await chrome.scripting.executeScript({
+                target: { tabId: tab.id },
+                files: ['contentScript.js']
+            });
+
             chrome.tabs.sendMessage(tab.id, { action: "getJobDescription" }, async (response) => {
                 if (chrome.runtime.lastError) {
                     statusDiv.textContent = 'Error: Could not connect to page. Try reloading the tab.';
