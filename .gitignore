@@ -1,0 +1,17 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Build Artifacts
+tailormycover_package.zip
+*.zip
+
+# Dependencies
+node_modules/
+libs/docx.js # We can include this, or exclude if we want them to download it. But for a repo, usually good to include if it's a manual lib. Let's keep it. 
+# Actually, user said "no private data". 
+# The code doesn't have keys.
+
+# IDEs
+.vscode/
+.idea/
