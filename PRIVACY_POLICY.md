@@ -25,4 +25,4 @@ We do not sell or share your data with third parties, with the sole exception of
 You have full control over your data. You can update or delete your stored resume and API key at any time through the extension's Options page. Removing the extension from Chrome will delete all locally stored data.
 
 ## 6. Contact
-If you have questions about this policy, please contact the developer.
+If you have questions about this policy, please contact the developer at akshatboudh4@gmail.com
